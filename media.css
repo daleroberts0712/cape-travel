@@ -1,0 +1,131 @@
+@media (max-width:992px){
+    .carousel-item:nth-child(1){
+        background: url('./img/overview.jpg') center / cover ;
+        padding: 150px;
+    }
+    
+    .carousel-item:nth-child(2){
+        background: url('./img/overview2.jpg') center / cover ;
+        padding: 150px;
+    }
+    
+    .carousel-item:nth-child(3){
+        background: url('./img/overview3.jpg') center / cover ;
+        padding: 150px;
+    }
+    
+    .carousel-item:nth-child(4){
+        background: url('./img/overview4.jpg') center / cover ;
+        padding: 150px;
+    }
+    
+    #explore .img{
+        padding: 80px;
+        width: 50%;
+    }
+    
+    #explore .content{
+        width: 50%;
+    }
+    
+    #beauty .content{
+        width: 50%;
+        background: #000;
+        padding: 70px;
+    }
+    
+    #beauty .img{
+        background-position:center;
+        padding: 80px;
+        width: 50%;
+    }
+    
+    #upcoming .content{
+        width: 50%;
+    }
+    
+    #upcoming .img{
+        padding: 70px;
+        width: 50%;
+    }
+}
+
+@media (max-width:760px){
+    .carousel-item:nth-child(1){
+        background: url('./img/overview.jpg') center / cover ;
+        padding: 120px;
+    }
+    
+    .carousel-item:nth-child(2){
+        background: url('./img/overview2.jpg') center / cover ;
+        padding: 120px;
+    }
+    
+    .carousel-item:nth-child(3){
+        background: url('./img/overview3.jpg') center / cover ;
+        padding: 120px;
+    }
+    
+    .carousel-item:nth-child(4){
+        background: url('./img/overview4.jpg') center / cover ;
+        padding: 120px;
+    }
+
+    #explore{
+        margin-top: 40px;
+        background-image: url('./img/explore.jpg'); 
+        background-position: center right;
+        padding: 10px;
+    }
+    
+    #explore .img{
+        display: none;
+    }
+    
+    #explore .content{
+        width: 100%;
+        color: white;
+    }
+    
+    #beauty .content{
+        width: 100%;
+        background: url('./img/beauty.jpg');
+        background-position: center left;
+        padding: 80px;
+    }
+    
+    #beauty .img{
+        display: none;
+    }
+
+    #upcoming{
+        background-image: url('./img/upcoming.jpg');
+        background-position: center;
+    }
+    
+    #upcoming .content{
+        width: 100%;
+        color: white;
+    }
+    
+    #upcoming .img{
+        display: none;
+    }
+}
+
+@media (max-width:660px){
+    .carousel-content{
+        transform: translateY(-50px);
+    }
+    
+    @keyframes content{
+        0%{transform: translateY(-300px);}
+        100%{transform: translateY(-50px);}
+    }
+}
+
+@media (max-width:545px){
+    .carousel-content{
+        display: none;
+    }
+}
