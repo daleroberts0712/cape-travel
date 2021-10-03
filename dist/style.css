@@ -9,6 +9,7 @@
 body{
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 h3{
@@ -74,6 +75,7 @@ h3{
     50%{opacity: 0.4;}
     100%{transform: translateY(-100px); opacity: 0.7;}
 }
+
 #explore .img{
     background-image: url('./img/explore.jpg'); 
     background-position: center right;
@@ -81,11 +83,39 @@ h3{
     padding: 100px;
     float: left;
     width: 60%;
+    box-shadow: 0px 5px 5px;
 }
 
 #explore .content{
     float: right;
     width: 40%;
+}
+
+.from-left{
+    transform: translateX(-50%);
+}
+
+.from-right{
+    transform: translateX(50%);
+}
+
+.from-left, .from-right {
+    transition: opacity 300ms ease-in, transform 500ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear, .from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-in{
+    opacity: 0;
+}
+
+.fade-in.appear{
+    opacity: 1;
+    transition: 500ms ease-in;
 }
 
 #beauty .content{
@@ -116,6 +146,7 @@ h3{
     padding: 100px;
     float: left;
     width: 60%;
+    box-shadow: 0px 5px 5px;
 }
 
 .offer1 .img{
